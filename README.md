@@ -2,6 +2,66 @@
 
 Template for live coding is in [live-coding-template branch](https://github.com/thinktecture/angular-connect-2015-write-once-run-anywhere/tree/live-coding-template).
 
+##[VIDEO Tutorial Angular Connect](https://www.youtube.com/watch?v=xPlRItKTIL0)
+## Pre-Requirements
+* `npm i -g gulp`
+* `npm i -g cordova`
+* `npm i -g ionic`
+* `npm i -g ios-sim`
+* `npm i -g ios-deploy`
+* `npm i -g nw`
+
+## COMMAND INSTRUCTIONS
+* `> git clone ...repo`
+* `> cd repodir   &&    npm install`
+* `> gulp dev:livereload` 
+### or simply `npm run live` to test web in http://localhost:8000
+
+### MOBILE (Cordova: iOS/Android/Win UAP)
+* `> cordova create cordova net.tt.boardz BoardZ`
+* `> cd cordova`
+* `> cordova platform add ios --save`
+* `> cordova platform add android --save`
+* `> cordova platform add windows --save`
+* `> cordova plugin add cordova-plugin-whitelist cordova-plugin-statusbar cordova-plugin-splashscreen cordova-plugin-geolocation cordova-plugin-camera cordova-plugin-crosswalk-webview --save`
+* `> gulp cordova:default` 
+### or simply `npm run mobile` to build for mobile (iOS/Android/Win UAP)
+* `> cordova run ios`
+* For live reload on iOS first open another terminal tab and run 
+* `> gulp cordova:watch:ios` 
+* And to debug open `Safari` and then menu `Develop -> Simulator -> select localhost` and you get Develoer Tools connected to running app to debug HTML/CSS/JS/Stack Trace etc... 
+### or simply `npm run ios` to run project on iOS Simulator
+* `> cordova run android`
+### or simply `npm run android` to run project on Android Simulator (SLOW)
+
+For Windows open Win10 VM and copy ./cordova/platform/windows  directory in local C:\PROJECTS\windows and 
+* open `C:\PROJECTS\windows\CordovaApp` solution with `VS2015` and set CordovaApp.Windows10 `Set as Startup Project` and run with `F5`
+
+###DESKOTP (NWjs: Mac/Win/Linux)
+* `> mkdir nwjs   &&    cd nwjs`
+* `> touch package.json   &&   open package.json`  and put this inside it 
+```
+{
+  "name": "BoardZ!",
+  "version": "1.0.0",
+  "main": "www/index.html",
+  "window": {
+    "title": "BoardZ! Desktop",
+    "toolbar": false,
+    "resizable": true,
+    "fullscreen": false,
+    "width": 1024,
+    "height": 768
+  }
+}
+```
+* `> gulp nwjs:default`
+### or simply `npm run desktop` to build for all desktop platform: Mac/Win/Linux
+* `> nw .`
+### or simply `npm run mac` to run native Mac application, that support Live reload and Debugging pressing `SHIFT+CTRL+D` to open Chromium Developer Tools
+* The same for other platform that you find in `./nwjs/build --> win32/win64/osx64/linux32/linux64` all Native desktop app!
+
+
 ## Requirements
 * [NodeJS](http://nodejs.org) NodeJS
 * `npm i -g node-static` Installation of a web server
@@ -41,7 +101,7 @@ The gulp task will build iOS, Windows Phone, Android phone apps as well as deskt
 
 ## Usage
 * To login just use username = password (eg. user: bob, password: bob). 
-* If you don't want to use the Azure Web API, you can run the server by yourself by starting the [BoardGame.Host](https://github.com/thinktecture/angular-connect-2015-write-once-run-anywhere/tree/master/src/BoardZApi) project with Visual Studio and [change the url](https://github.com/thinktecture/angular-connect-2015-write-once-run-anywhere/blob/master/src/BoardZ/app/init.js#L16) within the AngularJS app. The server will run on port 8080.
+* If you don't want to use the Azure Web API, you can run the server by yourself by starting the [BoardGame.Host](https://github.com/thinktecture/angular-connect-2015-write-once-run-anywhere/tree/master/src/BoardZApi) project with Visual Studio and [change the url](https://github.com/thinktecture/angular-connect-2015-write-once-run-anywhere/blob/master/src/BoardZ/app/init.js#L16) within the AngularJS app. The server will run on port 9090.
 * If starting the server leads into a TargetInvocationException, you'll need to add a url to your urlacl settings by executing the following command (on Windows :)) in an elevated command line: `netsh http add urlacl url=http://+:9090/ user=your_user_name`
 
 ## Supported platforms

@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "Sample for demonstrating various aspects of modern cross-platform applications.",
   "main": "gulpfile.js",
+  "scripts": {
+    "live": "gulp dev:livereload",
+    "mobile": "gulp cordova:default",
+    "ios": "cd cordova && cordova run ios",
+    "android": "cd cordova && cordova run android",
+    "desktop": "gulp nwjs:default",
+    "mac": "cd nwjs && nw ."
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/thinktecture/boardz-cross-platform-sample.git"

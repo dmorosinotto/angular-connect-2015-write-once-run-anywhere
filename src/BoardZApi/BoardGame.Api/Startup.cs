@@ -77,8 +77,8 @@ namespace BoardGame.Api
             httpConfiguration.EnableSwagger(c =>
             {
                 var baseDirectory = AppDomain.CurrentDomain.BaseDirectory;
-                var commentsFileName = Assembly.GetExecutingAssembly().GetName().Name + ".XML";
-                var commentsFile = Path.Combine(baseDirectory, "bin", "App_Data", commentsFileName);
+                var commentsFileName = Assembly.GetExecutingAssembly().GetName().Name + ".xml";
+                var commentsFile = Path.Combine(baseDirectory, "App_Data", commentsFileName);
 
                 c.IncludeXmlComments(commentsFile);
                 c.SingleApiVersion("v1", "BoardGame API");

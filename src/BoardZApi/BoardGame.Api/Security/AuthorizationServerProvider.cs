@@ -20,6 +20,7 @@ namespace BoardGame.Api.Security
                 var claimsIdentity = new ClaimsIdentity(context.Options.AuthenticationType);
                 claimsIdentity.AddClaim(new Claim(ClaimTypes.NameIdentifier, context.UserName));
                 context.Validated(claimsIdentity);
+                System.Console.WriteLine("Login " + context.UserName);
             }
 
             return base.GrantResourceOwnerCredentials(context);

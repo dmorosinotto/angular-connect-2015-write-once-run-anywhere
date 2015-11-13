@@ -4,67 +4,67 @@
     "title": "BoardZ!"
   },
   "common": {
-    "toggleNavigation": "Navigation umschalten",
-    "showAll": "Alle anzeigen",
-    "back": "Zurück"
+    "toggleNavigation": "Cambia navigazione",
+    "showAll": "Mostra tutti",
+    "back": "Indietro"
   },
   "dashboard": {
     "title": "Dashboard",
-    "boardGames": "Brettspiele",
-    "players": "Spieler",
-    "more": "Mehr erfahren"
+    "boardGames": "Giochi",
+    "players": "Giocatori",
+    "more": "Piu' informazioni"
   },
   "gameList": {
-    "title": "Spieleliste",
-    "error": "Fehler beim Abrufen der Spieleliste.",
-    "noGames": "Es konnten keine Spiele gefunden werden.",
-    "add": "Spiel hinzufügen"
+    "title": "Lista giochi",
+    "error": "Impossibile recuperare la lista dei gichi.",
+    "noGames": "Nessun gioco trovato.",
+    "add": "Aggiungi gioco"
   },
   "radiusSearch": {
-    "title": "Umkreissuche",
-    "search": "Suchen",
-    "unavailable": "Geolocation steht auf dieser Plattform entweder nicht zur Verfügung oder wurde blockiert.",
-    "noResults": "Im Umkreis wurden keine Mitspieler gefunden."
+    "title": "Vicino a te",
+    "search": "Ricerca",
+    "unavailable": "I servizi di localizzazione non sono disponibili per questa platform o non sono stati abilitati.",
+    "noResults": "Nessun giocatore trovato nella zona."
   },
   "packshot": {
-    "title": "Verpackung",
-    "noShot": "Für dieses Spiel ist keine Verpackung hinterlegt."
+    "title": "Foto",
+    "noShot": "Spicenti non abbiamo foto di gioco."
   },
   "footer": {
-    "text": "nix hier."
+    "text": "Non utilizzato."
   },
   "sidebar": {
-    "language": "Sprache",
+    "language": "Lingue",
     "languages": {
       "enUS": "English",
-      "deDE": "Deutsch"
+      "deDE": "Italiano"
     }
   },
   "login": {
-    "title": "Login",
-    "username": "Benutzername",
-    "password": "Passwort",
-    "cancel": "Abbrechen",
-    "signIn": "Einloggen",
-    "rememberMe": "Eingeloggt bleiben",
-    "error": "Login nicht möglich. Bitte prüfen Sie Ihre Eingaben und versuches Sie es erneut!"
+    "title": "Credenziali di accesso",
+    "username": "Utente",
+    "password": "Password",
+    "cancel": "Annulla",
+    "signIn": "Login",
+    "rememberMe": "Ricordami",
+    "error": "Login non riuscita. Controlla che le tue credenziali corrispondano!"
   },
   "gameDetails": {
-    "success": "Spieldetails wurden erfolgreich bearbeitet!",
-    "gameName": "Spielname",
-    "gameDescription": "Beschreibung",
-    "cancel": "Zurücksetzen",
-    "save": "Speichern",
+    "success": "I dettagli del gioco sono stati aggiornati corretamente!",
+    "gameName": "Nome gioco",
+    "gameDescription": "Descrizione",
+    "cancel": "Annulla",
+    "save": "Salva",
     "iAmGaming": {
-      "success": "Dein Spiel wurde erfolgreich übermittelt. Freue Dich auf neue Mitspieler!",
-      "title": "Ich spiele gerade!",
-      "description": "Die &quot;Ich spiele gerade!&quot;-Funktion übermittelt ein Bild und Deinen aktuellen Standort, sodass andere Mitspieler Dich finden und mit Dir spielen können!",
-      "photo": "Fotografiere Dein Spiel!",
-      "photoError": "Leider haben wir keinen Zugriff auf Deine Kamera, um ein Bild zu machen. :-(",
-      "position": "Aktueller Standort",
-      "gettingPosition": "Aktuelle Position wird ermittelt...",
-      "positionError": "Leider haben wir keinen Zugriff auf Deinen Standort, um diesen zu bestimmen. :-("
+      "success": "La tua partita e' stata salvata, attendi che qualche giocatore ti contatti!",
+      "title": "Inizia una partita!",
+      "description": "Pubblica la foto del tuo gioco e la tua posizione per iniziare una nuova Partita!",
+      "photo": "Scatta una foto del tuo gioco!",
+      "photoError": "Non e' stato possibile accedere alla Camera per scattare una foto. :-(",
+      "position": "Posizione corrente",
+      "gettingPosition": "Acquisizione della tua localizzazione...",
+      "positionError": "Non e' stato possibile accedre alla tua Posizione. :-("
     },
-    "error": "Leider konnten wir Deine Anfrage nicht zufriedenstellend beantworten. Bitte probiere es später noch einmal."
+    "error": "Ci sono problemi di comunicazione, non e' stato possibile eseguire l'operazione, riprova piu' tardi..."
   }
 }
